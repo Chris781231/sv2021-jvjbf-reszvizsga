@@ -27,7 +27,7 @@ public class Movie {
 
     public void reserveSpace(int spaces) {
         if (spaces > freeSpaces) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("Not enough space");
         }
         freeSpaces -= spaces;
     }

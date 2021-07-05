@@ -62,7 +62,7 @@ public class MovieService {
     }
 
 
-    // Private methods
+
     private Movie findById(Long id) {
         return movies.stream()
                 .filter(movie -> movie.getId().equals(id))
